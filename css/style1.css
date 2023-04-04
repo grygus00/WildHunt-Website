@@ -1,0 +1,904 @@
+body {
+    background-color: #d9d9d9;
+    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+
+    font-family: 'Oswald', sans-serif;
+
+}
+
+
+.links {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.links h2 {
+    display: inline-block;
+    margin: 0 5vw;
+    text-decoration: none;
+    color: black;
+}
+
+.links h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.links h2:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+main {
+    aspect-ratio: 16/9;
+    width: 70vw;
+    background-color: beige;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    cursor: url(../images/Buttons/aim.png) 18 18, pointer;
+}
+
+.aim {
+    cursor: url(../images/Buttons/aim.png) 18 18, pointer;
+}
+
+.aim1 {
+    cursor: url(../images/Buttons/aim_1.png) 18 18, pointer;
+}
+
+.aim2 {
+    cursor: url(../images/Buttons/aim_2.png) 18 18, pointer;
+}
+
+.aim3 {
+    cursor: url(../images/Buttons/aim_3.png) 18 18, pointer;
+}
+
+/* ------------------------------------------START------------------------------------------ */
+.hide {
+    display: none;
+}
+
+
+#start_interface {
+    background-image: url("../images/Screens/Start_screen.svg");
+}
+
+#instruction_interface {
+    background-image: url("../images/Screens/Instruction.svg");
+}
+
+#option_Instructions_screen {
+    background-image: url("../images/Screens/Instruction.svg");
+}
+
+/* ------------------------------------------GameOver------------------------------------------ */
+#wonScreen {
+    background-image: url("../images/Screens/wonScreen.svg");
+}
+
+#eliteScreen {
+    background-image: url("../images/Screens/eliteScreen.svg");
+}
+
+#loseScreen {
+    background-image: url("../images/Screens/loseScreen.svg");
+}
+
+#cruelScreen {
+    background-image: url("../images/Screens/cruelScreen.svg");
+}
+
+/* --------------------PLAY BUTTON-------------------- */
+#start_b_1 {
+    background-image: url("../images/Buttons/Play.svg");
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 24%;
+    height: 14%;
+    background-size: 15vw;
+    left: 50%;
+    top: 63%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#start_b_1:hover {
+    background-size: 16vw;
+}
+
+#start_b_2 {
+    background-image: url("../images/Buttons/Play.svg");
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 18%;
+    height: 8%;
+    background-size: 10vw;
+    left: 50%;
+    top: 87%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#start_b_2:hover {
+    background-size: 11vw;
+}
+
+/* --------------------INSRUCTION BUTTON-------------------- */
+#instruction_b_1 {
+    background-image: url("../images/Buttons/Instructions.svg");
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 24%;
+    height: 14%;
+    background-size: 15vw;
+    left: 50%;
+    top: 78%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#instruction_b_1:hover {
+    background-size: 16vw;
+}
+
+/* --------------------SOUND BUTTON-------------------- */
+#sounds_button {
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    right: 0;
+    bottom: 4%;
+}
+
+#sounds_button div {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#sound_off {
+    background-image: url("../images/Buttons/Sound_off.svg");
+}
+
+#sound_on:hover,
+#sound_off:hover {
+    transform: scale(1.1);
+}
+
+#sound_on {
+    background-image: url("../images/Buttons/Sound_on.svg");
+}
+
+/* --------------------OPTION BUTTON-------------------- */
+#options_button {
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    left: 0;
+    bottom: 4%;
+}
+
+#option {
+    background-image: url("../images/Buttons/Option.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#option:hover {
+    transform: scale(1.1);
+}
+
+/* --------------------OPTION SCREEN-------------------- */
+#options_screen {
+    background-image: url("../images/Screens/Option_screen.svg");
+    pointer-events: auto;
+}
+
+#options_screen_bg {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: black;
+    opacity: 70%;
+}
+
+#escape,
+#escape_interuction {
+    position: absolute;
+    background-image: url("../images/Buttons/Exit.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 21%;
+    right: 17%;
+    width: 12%;
+    height: 12%;
+    pointer-events: auto;
+}
+
+#escape_interuction {
+    position: absolute;
+    top: 20%;
+    right: 13%;
+}
+
+#escape:hover,
+#escape_interuction:hover {
+    transform: scale(1.1);
+}
+
+/* --------------------OPTION BUTTONS-------------------- */
+#return,
+#option_Instructions,
+#endgame,
+#escape_return {
+    position: absolute;
+    background-position: center;
+    background-size: 15vw;
+    background-repeat: no-repeat;
+    width: 26%;
+    height: 12%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#return {
+    background-image: url("../images/Buttons/Return.svg");
+
+    top: 42%;
+
+}
+
+#escape_return {
+    background-image: url("../images/Buttons/Return.svg");
+    background-size: 10vw;
+    top: 81%;
+    pointer-events: auto;
+}
+
+#escape_return:hover {
+    background-size: 11vw;
+
+}
+
+#option_Instructions {
+    background-image: url("../images/Buttons/Instructions.svg");
+    top: 56%;
+
+}
+
+#endgame {
+    background-image: url("../images/Buttons/End_game.svg");
+    top: 70%;
+}
+
+#return:hover,
+#option_Instructions:hover,
+#endgame:hover {
+    background-size: 16vw;
+}
+
+
+.black_bord {
+    filter: blur(15px) brightness(30%);
+}
+
+.paused {
+    animation-play-state: paused;
+}
+
+.startOpacity {
+    animation: minusOpacity 0.2s forwards linear;
+
+}
+
+@keyframes minusOpacity {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------GAME------------------------------------------ */
+
+
+
+#game {
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+}
+
+.game_dark {
+    filter: blur(100px);
+}
+
+.bg_css {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    pointer-events: none;
+}
+
+#game_sky {
+    background-image: url("../images/Backgrounds/Sky_long.svg");
+    bottom: 0%;
+    width: 100%;
+    height: 3000px;
+    position: absolute;
+
+}
+
+.skyMove {
+    animation: sky_move 30s;
+}
+
+#game_bg {
+    background-image: url("../images/Backgrounds/Background.svg");
+}
+
+#game_mg {
+    background-image: url("../images/Backgrounds/Middleground.svg");
+}
+
+#game_fg2 {
+    background-image: url("../images/Backgrounds/Foreground_2.svg");
+}
+
+#game_fg1_grass {
+    background-image: url("../images/Backgrounds/Foreground_grass.svg");
+    pointer-events: none;
+}
+
+#game_fg1_tree {
+    background-image: url("../images/Backgrounds/Foreground_tree.svg");
+    pointer-events: none;
+}
+
+#game_stats {
+    background-image: url("../images/Stats/");
+}
+
+
+
+
+.animal_sprite_css {
+    aspect-ratio: 1/1;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* ------------------------------------------DUCK------------------------------------------ */
+#game_duck {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    left: -15%;
+
+}
+
+#game_duck2 {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    right: -25%;
+}
+
+.duck_position_l {
+    left: -25%;
+}
+
+.duck_position_r {
+    right: -25%;
+}
+
+.duck_position1 {
+    top: 1vh;
+}
+
+.duck_position2 {
+    top: 4vh;
+}
+
+.duck_position3 {
+    top: 10%;
+}
+
+.duck_position4 {
+    top: 14%;
+}
+
+.duck_position5 {
+    top: 18vh;
+}
+
+.duck_position6 {
+    top: 23vh;
+}
+
+.duck_position7 {
+    top: 27%;
+}
+
+.duck_position8 {
+    top: 31%;
+}
+
+.duck_position9 {
+    top: 36vh;
+}
+
+.duck_position10 {
+    top: 42vh;
+}
+
+.duck_position11 {
+    top: 49vh;
+}
+
+.duck_position12 {
+    top: 54vh;
+}
+
+.duck_position13 {
+    top: 58vh;
+}
+
+.duck_position14 {
+    top: 62vh;
+}
+
+
+
+.duck_animation_l1 {
+    animation: move_duck infinite linear;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.duck_animation_l2 {
+    animation: move_duck infinite linear;
+    animation-duration: 2.2s;
+    animation-delay: 4s;
+}
+
+.duck_animation_l3 {
+    animation: move_duck infinite linear;
+    animation-duration: 2.5s;
+    animation-delay: 2s;
+}
+
+.duck_animation_l4 {
+    animation: move_duck infinite linear;
+    animation-duration: 2.7s;
+    animation-delay: 2s;
+}
+
+.duck_animation_r1 {
+    animation: move_duck2 infinite linear;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.duck_animation_r2 {
+    animation: move_duck2 infinite linear;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+
+.duck_animation_r3 {
+    animation: move_duck2 infinite linear;
+    animation-duration: 2.5s;
+    animation-delay: 4s;
+}
+
+.duck_animation_r4 {
+    animation: move_duck2 infinite linear;
+    animation-duration: 1.9s;
+    animation-delay: 3s;
+}
+
+#game_duck_sprite {
+    width: 50%;
+    height: auto;
+    aspect-ratio: 1/1;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#game_duck_sprite2 {
+    width: 50%;
+    height: auto;
+    aspect-ratio: 1/1;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@keyframes move_duck {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translateX(80vw);
+    }
+}
+
+@keyframes move_duck2 {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translateX(-80vw);
+    }
+}
+
+.duck_falling_anim {
+    animation: falling_duck 3s ease-out;
+}
+
+.duck_flying_img {
+    background-image: url("../images/Objects/Duck.svg");
+}
+
+.duck_flying_img_2 {
+    background-image: url("../images/Objects/Duck_2.svg");
+
+}
+
+.duck_falling_img {
+    background-image: url("../images/Objects/Duck_falling.svg");
+}
+
+.duck_falling_img_2 {
+    background-image: url("../images/Objects/Duck_falling_2.svg");
+}
+
+@keyframes falling_duck {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translateY(100vw);
+    }
+}
+
+/* ------------------------------------------RABBIT------------------------------------------ */
+#game_rabbit {
+    bottom: 0%;
+    width: 8%;
+    height: 8%;
+    position: absolute;
+}
+
+.game_rabbit_position1 {
+    left: 20%;
+}
+
+.game_rabbit_position2 {
+    left: 40%;
+}
+
+.game_rabbit_position3 {
+    left: 50%;
+}
+
+.game_rabbit_position4 {
+    left: 70%;
+}
+
+.game_rabbit_position5 {
+    left: 90%;
+}
+
+#game_rabbit_sprite {
+    background-image: url("../images/Objects/Rabbit_jump.svg");
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.game_rabbit_animation1 {
+    animation: move_rabbit1 3s infinite linear;
+    animation-delay: 2s;
+}
+
+@keyframes move_rabbit1 {
+    0% {
+        transform: translateX(0%) translateY(0%) rotate(140deg);
+    }
+
+    40% {
+        transform: translateX(-170%) translateY(-240%) rotate(50deg);
+    }
+
+    100% {
+        transform: translateX(-420%) translateY(200%) rotate(-50deg);
+    }
+}
+
+.game_rabbit_animation2 {
+    animation: move_rabbit2 3s infinite linear;
+    animation-delay: 2s;
+}
+
+@keyframes move_rabbit2 {
+    0% {
+        transform: translateX(0%) translateY(0%) rotate(140deg);
+    }
+
+    40% {
+        transform: translateX(-170%) translateY(-200%) rotate(50deg);
+    }
+
+    100% {
+        transform: translateX(-420%) translateY(200%) rotate(-50deg);
+    }
+}
+
+.rabbit_falling_anim {
+    animation: falling_rabbit 2s linear;
+}
+
+@keyframes falling_rabbit {
+
+    100% {
+        transform: translateY(2000%);
+    }
+}
+
+/* ------------------------------------------DISC------------------------------------------ */
+#game_disc {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    right: -20vw;
+    /* animation: move_disc 5s infinite linear; */
+}
+
+#game_disc_sprite {
+    width: 50%;
+    height: auto;
+    aspect-ratio: 1/1;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#game_disc2 {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    left: -20vw;
+    /* animation: move_disc 5s infinite linear; */
+}
+
+#game_disc_sprite2 {
+    width: 50%;
+    height: auto;
+    aspect-ratio: 1/1;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.disc_position_l {
+    left: -25%;
+}
+
+.disc_position_r {
+    right: -25%;
+}
+
+.disc_flying_img {
+    background-image: url("../images/Objects/Disc_1.svg");
+}
+
+.disc_falling_img {
+    background-image: url("../images/Objects/Disc_broke1.svg");
+}
+
+.disc_flying_img2 {
+    background-image: url("../images/Objects/Disc_2.svg");
+}
+
+.disc_falling_img2 {
+    background-image: url("../images/Objects/Disc_broke2.svg");
+}
+
+@keyframes move_disc {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translateX(-130vw);
+    }
+}
+
+.disc_falling_anim {
+    animation: falling_disc 3s ease-out;
+}
+
+@keyframes falling_disc {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translateY(100vw);
+    }
+}
+
+/* ------------------------------------------DOG------------------------------------------ */
+#game_dog {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    left: -10vw;
+    bottom: 18vh;
+    animation: move_dog 7s infinite linear;
+
+}
+
+#game_dog_sprite {
+    background-image: url("../images/Objects/Dog_angry.svg");
+}
+
+@keyframes move_dog {
+    0% {
+        transform: translateX(0vw);
+    }
+
+    20% {
+        transform: translateX(25vw);
+    }
+
+    33% {
+        transform: translateX(25vw);
+    }
+
+    80% {
+        transform: translateX(80vw);
+    }
+
+    100% {
+        transform: translateX(80vw);
+    }
+}
+
+
+@keyframes sky_move {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(70%);
+    }
+}
+
+.sun_down {
+    animation: brightness_down 30s;
+}
+
+@keyframes brightness_down {
+    from {
+        filter: brightness(100%);
+    }
+
+    to {
+        filter: brightness(40%);
+    }
+}
+
+#heartcontainer {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+
+#heartcontainer img {
+    width: 3vw;
+    margin: 5px;
+}
+
+#timecontainer {
+    position: absolute;
+    left: 0.5%;
+    top: 11.5%;
+    width: 20%;
+    height: 20%;
+    background-image: url(../images/Stats/Time.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+
+}
+
+#time {
+    width: 65%;
+    height: 14%;
+
+    animation: shrink_time 33s;
+    animation-fill-mode: forwards;
+    transform-origin: right;
+    position: absolute;
+
+    left: 20.5%;
+    top: 42.5%;
+    background: rgb(232, 203, 91);
+    background: linear-gradient(90deg, rgba(232, 203, 91, 1) 0%, rgba(178, 178, 193, 1) 100%);
+}
+
+@keyframes shrink_time {
+    0% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform: scaleX(0);
+    }
+}
+
+
+#ammocontainer {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    pointer-events: none;
+    width: 8%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ammocontainer img {
+    width: 8%;
+
+    margin: 5px;
+}
+
+#pointscontainer {
+    position: absolute;
+    right: 2%;
+    top: 15%;
+}
+
+#pointscontainer h2 {
+    color: beige;
+}

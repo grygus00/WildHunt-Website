@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Hunt</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="/images/icon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="links">
+        <h2><a href="index.html">GAME</a></h2>
+        <h2><a href="assets.html">ASSETS LIST</a></h2>
+    </div>
+    <main>
+        <!-- ----------------------------GAME---------------------------- -->
+        <div id="game">
+            <div class="black_b">
+                <div id="game_sky" class="black_bord"></div>
+                <div id="game_bg" class="bg_css black_bord"></div>
+                <div id="game_mg" class="bg_css black_bord"></div>
+                <div id="game_fg2" class="bg_css black_bord"></div>
+                <!---------------DUCK--------------->
+                <div id="animals" class="hide">
+                    <div id="game_duck" class="black_bord">
+                        <div class="sun_down">
+                            <div id="game_duck_sprite">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="game_duck2" class="black_bord">
+                        <div class="sun_down">
+                            <div id="game_duck_sprite2">
+                            </div>
+                        </div>
+                    </div>
+                    <!---------------DISC--------------->
+                    <div id="game_disc" class="black_bord">
+                        <div class="sun_down">
+                            <div id="game_disc_sprite"></div>
+                        </div>
+                    </div>
+                    <div id="game_disc2" class="black_bord">
+                        <div class="sun_down">
+                            <div id="game_disc_sprite2"></div>
+                        </div>
+                    </div>
+                    <!---------------DOG--------------->
+                    <div id="game_dog" class="black_bord">
+                        <div class="sun_down">
+                            <div id="game_dog_sprite" class="animal_sprite_css"></div>
+                        </div>
+                    </div>
+                    <!---------------RABBIT--------------->
+                    <div id="game_rabbit" class="black_bord">
+                        <div class="sun_down">
+                            <div id="game_rabbit_sprite" class="game_rabbit_animation1"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="game_fg1_grass" class="bg_css black_bord"></div>
+
+                <div id="game_fg1_tree" class="bg_css black_bord"></div>
+
+                <div id="game_stats" class="bg_css black_bord hide"></div>
+            </div>
+
+            <!-- <div id="stats" class="bg_css"></div> -->
+
+            <div id="heartcontainer"></div>
+            <div id="timecontainer" class="hide">
+                <div id="time"></div>
+            </div>
+            <div id="ammocontainer"></div>
+            <div id="pointscontainer">
+                <h2 id="pointscontainer_h2"></h2>
+            </div>
+            <div id="options_button" class="hide">
+                <div id="option"></div>
+            </div>
+
+        </div>
+        <!-- ----------------------------START---------------------------- -->
+        <div id="start">
+
+            <div id="start_interface" class="bg_css">
+
+            </div>
+
+
+
+        </div>
+        <div id="instruction_interface" class="bg_css hide">
+
+        </div>
+        <div id="options_screen_bg" class="hide">
+        </div>
+        <div id="options_screen" class="bg_css hide">
+            <div id="escape"></div>
+            <div id="return"></div>
+            <div id="option_Instructions"></div>
+            <div id="endgame"></div>
+
+        </div>
+        <div id="option_Instructions_screen" class="bg_css hide">
+            <div id="escape_interuction"></div>
+            <div id="escape_return"></div>
+        </div>
+        <div id="wonScreen" class="bg_css hide">
+        </div>
+        <div id="eliteScreen" class="bg_css hide">
+        </div>
+        <div id="loseScreen" class="bg_css hide">
+        </div>
+        <div id="cruelScreen" class="bg_css hide">
+        </div>
+
+        <div id="start_button">
+            <div id="start_b_1"></div>
+            <div id="instruction_b_1"></div>
+        </div>
+        <div id="instruction_button" class="hide">
+            <div id="start_b_2"></div>
+        </div>
+        <div id="sounds_button">
+            <div id="sound_off" class="hide"></div>
+            <div id="sound_on"></div>
+        </div>
+
+        <div id="sounds">
+            <audio id="gameMusic" src="sounds/gameMusic.mp3" autoplay loop></audio>
+            <audio id="duckShoot1" src="sounds/DuckShot1.aac"></audio>
+            <audio id="duckSound1" src="sounds/DuckSound1.aac"></audio>
+            <audio id="gameOver1" src="sounds/gameOver1.aac"></audio>
+            <audio id="gameOver2" src="sounds/gameOver2.aac"></audio>
+            <audio id="gameWon2" src="sounds/gameWon1.aac"></audio>
+            <audio id="gameWon1" src="sounds/gameWon2.aac"></audio>
+            <audio id="shoot_sound" src="sounds/shoot.aac"></audio>
+        </div>
+    </main>
+    <script src="js/script1.js"></script>
+</body>
+
+</html>
